@@ -1,0 +1,8 @@
+stages:
+  prepare:
+    cmd: python src/preprocessing_spotify.py
+    deps:
+      - data/spotify.csv
+      - src/preprocessing_spotify.py
+    outs:
+      - data/save_data/spotify_processed.csv

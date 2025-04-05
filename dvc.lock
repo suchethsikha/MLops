@@ -1,0 +1,18 @@
+schema: '2.0'
+stages:
+  prepare:
+    cmd: python src/preprocessing_spotify.py
+    deps:
+    - path: data/spotify.csv
+      hash: md5
+      md5: 592feac8c43dab86806642869c72d786
+      size: 23304504
+    - path: src/preprocessing_spotify.py
+      hash: md5
+      md5: 27f5fa01cc770457d45f43da6287e09c
+      size: 337
+    outs:
+    - path: data/save_data/spotify_processed.csv
+      hash: md5
+      md5: 34e889a8d607adabb66a7ba8b650b107
+      size: 23283808
