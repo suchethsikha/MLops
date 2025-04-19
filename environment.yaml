@@ -5,3 +5,4 @@ dependencies:
   - pip
   - pip:
       - mlflow==2.15.1
+      - metaflow==2.15.8
